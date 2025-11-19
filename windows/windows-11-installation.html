@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 安装 | 南军系统集合</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="南军系统集合" width="119" height="32"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="microsoft-store.html">南军系统集合商店</a></li>
+                <li><a href="microsoft-365.html">南军办公套件</a></li>
+                <li><a href="office.html">南军办公软件</a></li>
+                <li><a href="surface.html">南军设备</a></li>
+                <li><a href="xbox.html">南军游戏</a></li>
+                <li><a href="windows-10.html">Windows 10</a></li>
+                <li><a href="windows-7-aik.html">Windows 7 AIK</a></li>
+                <li><a href="windows-8-1-kb2919355.html">Windows 8.1 更新</a></li>
+                <li><a href="windows-11.html">Windows 11</a></li>
+                <li><a href="windows-server.html">南军服务器系统</a></li>
+                <li><a href="contact-us.html">支持</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="搜索">
+                <button>搜索</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Windows 11 安装选项</h1>
+                <p>选择最适合您需求的Windows 11安装方式，获取最新的操作系统体验。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 安装选项区域 -->
+    <section class="products">
+        <div class="container">
+            <!-- 安装助手选项 -->
+            <div class="product-card-large">
+                <div class="product-content">
+                    <h2>Windows 11 安装助手</h2>
+                    <p>这是在您当前使用的设备上安装 Windows 11 的最佳选择。</p>
+                    <div class="note-box">
+                        <p><strong>注意：</strong>Windows 11 安装助手不在基于 Arm 的 PC 上运行；仅适用于 x64 处理器。</p>
+                    </div>
+                    <a href="https://download.microsoft.com/download/db8267b0-3e86-4254-82c7-a127878a9378/Windows11InstallationAssistant.exe" class="btn-primary" target="_blank">立即下载</a>
+                </div>
+            </div>
+
+            <!-- 安装媒体选项 -->
+            <div class="product-card-large">
+                <div class="product-content">
+                    <h2>创建 Windows 11 安装媒体</h2>
+                    <p>如果你想在新的或二手的 PC 上执行 Windows 11 的重新安装或全新安装，请使用此选项下载媒体创建工具以制作可启动的 USB 或 DVD。</p>
+                    <div class="note-box">
+                        <p><strong>注意：</strong>Windows 11 媒体创建工具不能用于为基于 Arm 的 PC 创建安装媒体；只能为 x64 处理器创建媒体。</p>
+                    </div>
+                    <a href="https://download.microsoft.com/download/4e211187-7e51-429a-a93f-5bf9a77ad77e/MediaCreationTool.exe" class="btn-primary" target="_blank">下载媒体创建工具</a>
+                </div>
+            </div>
+
+            <!-- ISO 下载选项 -->
+            <div class="product-card-large">
+                <div class="product-content">
+                    <h2>下载适用于 x64 设备的 Windows 11 磁盘映像 (ISO)</h2>
+                    <p>此选项适用于想要创建可启动安装媒体（USB 闪存驱动器、DVD）或创建虚拟机（.ISO 文件）安装 Windows 11。此下载是一个多版本 ISO，它使用你的产品密钥来解锁正确的版本。</p>
+                    
+                    <div class="iso-selector">
+                        <select id="product-edition" aria-label="选择" style="width: 100.0%; margin-bottom: 20px;">
+                            <option value="null" selected="selected">选择“下载”</option>
+                            <option value="3262">Windows 11（适用于 x64 设备的多版本 ISO）</option>
+                            <option value="3263">Windows 11 家庭版（仅限中国）</option>
+                            <option value="3264">Windows 11 专业中文版本</option>
+                        </select>
+                    </div>
+                    
+                    <a href="https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64.iso?t=619dbc57-0687-4d68-9308-81b52b2ab632&P1=1759455324&P2=601&P3=2&P4=wk7lDd6sn1Am5YoOiOIZVUjJkoGt8gO3URC1fwGvgLojsoYNUZsXguoJ2FtnePrZaJUKNE47lqJ61Ri3dbwxTT4etpf%2bax0Sf%2bkVGwEpzBHevfuDRNMymuxgZ4uyaDK1KAnV%2bhvzZiIeNoWBv4y3XYycuSV8vnOxm4EQcTnKccZ2apccjgiY5efLexsHeOtmhOGI%2bYrCfHTgROriG%2bP4QuR9iHwdeLq8u92ioL4s9iq8d8VCI56U%2fqt6LGfsLGljNrk5D7ZRNMk9U6SnXwM0sYkifRvDfC6Z1koLnU9iM7H0%2fEQPgIgp74ODej1VxUKdW5gUQK4BNUuQhnV8lQlF5w%3d%3d" class="btn-primary" target="_blank">下载 Windows 11 ISO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 系统需求和注意事项 -->
+    <section class="download-section">
+        <div class="container">
+            <h2>开始下载前的准备</h2>
+            
+            <div class="requirements">
+                <h3>确保您具备：</h3>
+                <ul>
+                    <li>拥有 Internet 连接（可能需要缴纳 Internet 服务提供商费用）。</li>
+                    <li>在要下载 .iso 文件的计算机、USB 或外部驱动器上有足够的可用数据存储空间。</li>
+                    <li>至少具有 8GB（和 DVD 刻录机）的空白 DVD 光盘，用于创建可启动光盘。我们建议使用空白 USB 或 DVD，因为在安装过程中其中的任何内容都将被删除。</li>
+                    <li>如果在尝试从 ISO 文件刻录 DVD 可启动光盘时收到"光盘映像文件过大"消息，请考虑使用更高容量的双层 DVD。</li>
+                </ul>
+            </div>
+
+            <div class="requirements">
+                <h3>确保要安装 Windows 11 的 PC：</h3>
+                <ul>
+                    <li><strong>拥有 64 位 CPU：</strong>Windows 11 只能在 64 位 CPU 上运行。若要查看你的 PC 是否有 64 位 CPU，请转到 设置 > 系统 > 关于 ，或在 Windows 中搜索"系统信息"，然后在"系统类型"下查看。</li>
+                    <li><strong>满足系统需求：</strong>并非所有运行 Windows 10 的设备都有资格获得 Windows 11 升级。</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <p><strong>警告：</strong>不建议在不符合 Windows 11 最低系统需求的 PC 上安装 Windows 11 媒体，这可能会导致兼容性问题。如果你继续在不符合要求的 PC 上安装 Windows 11，则该 PC 将不再受支持，并且无权接收更新。由于缺乏兼容性而导致的 PC 损坏不在制造商保修范围内。</p>
+                </div>
+            </div>
+
+            <p>下载完成后，你可以使用 验证下载 选项来确保文件的完整性。</p>
+            <p>注意：有关升级要求和支持的功能，请参阅 Windows 11 设备规格。某些功能需要额外的硬件。我们还建议你访问 PC 制造商的网站，了解有关更新的驱动程序和硬件兼容性的信息。</p>
+        </div>
+    </section>
+
+    <!-- 安装说明 -->
+    <section class="products">
+        <div class="container">
+            <h2>安装说明</h2>
+            
+            <div class="installation-guide">
+                <h3>安装说明 (DVD)：</h3>
+                <ol>
+                    <li>找到你下载 Windows 11 ISO 的文件夹。</li>
+                    <li>若要使用 Windows 磁盘映像刻录机创建安装 DVD，请右键单击 ISO 文件，然后选择 属性 。在"常规选项卡"下，单击"更改..."，其中显示"打开方式："，然后选择“Windows 资源管理器”。选择 应用 。这将使 刻录光盘映像 能够在你右键单击 ISO 文件时显示。</li>
+                    <li>要使用第三方 DVD 刻录程序，你可以右键单击 ISO 文件，然后选择 打开方式 。</li>
+                </ol>
+            </div>
+
+            <div class="installation-guide">
+                <h3>安装说明 (ISO)：</h3>
+                <p>如果你要从 ISO 文件直接安装 Windows 11，而不使用 DVD 或 USB 闪存驱动器，则可以通过装载 ISO 文件来执行此操作。此时，会将你当前的操作系统升级到 Windows 11。</p>
+                <ol>
+                    <li>若要装载 ISO 文件，请执行以下操作：</li>
+                    <li>转到下载 ISO 文件的位置。然后，右键单击 ISO 文件并选择 属性 。</li>
+                    <li>在"常规"选项卡上，单击"更改..."，其中显示“打开方式："然后选择 Windows 资源管理器作为用于打开 ISO 文件的程序，然后选择 应用 。</li>
+                    <li>右击 ISO 文件并选择 挂载 。</li>
+                    <li>这将创建一个"虚拟"可启动光盘。双击即可查看里面的文件。双击 setup.exe 开始 Windows 11 安装。</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>南军系统集合商店</h4>
+                    <ul>
+                        <li><a href="microsoft-store.html">南军系统集合商店主页</a></li>
+                        <li><a href="microsoft-365.html">南军办公套件</a></li>
+                        <li><a href="office.html">南军办公软件</a></li>
+                        <li><a href="surface.html">南军设备</a></li>
+                        <li><a href="xbox.html">南军游戏</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>南军系统集合商店</h4>
+                    <ul>
+                        <li><a href="account-profile.html">南军账户</a></li>
+                        <li><a href="sign-in.html">登录</a></li>
+                        <li><a href="create-account.html">注册账户</a></li>
+                        <li><a href="order-history.html">订单历史</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="contact-us.html">联系我们</a></li>
+                        <li><a href="help-center.html">帮助中心</a></li>
+                        <li><a href="downloads.html">下载中心</a></li>
+                        <li><a href="system-requirements.html">系统要求</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>© 2023 南军系统集合。保留所有权利。</p>
+                    <div class="footer-terms">
+                        <a href="privacy.html">隐私政策</a>
+                        <a href="terms.html">使用条款</a>
+                        <a href="cookies.html">Cookie 设置</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 为下拉菜单添加事件监听器
+        const productEditionSelect = document.getElementById('product-edition');
+        const downloadLink = document.querySelector('.btn-primary[href*="Win11_25H2_Chinese_Simplified_x64.iso"]');
+        
+        // 确保元素存在
+        if (productEditionSelect && downloadLink) {
+            productEditionSelect.addEventListener('change', function() {
+                var selectedOption = this.value;
+                
+                // 默认链接 - 多版本ISO
+                var defaultLink = 'https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64.iso?t=619dbc57-0687-4d68-9308-81b52b2ab632&P1=1759455324&P2=601&P3=2&P4=wk7lDd6sn1Am5YoOiOIZVUjJkoGt8gO3URC1fwGvgLojsoYNUZsXguoJ2FtnePrZaJUKNE47lqJ61Ri3dbwxTT4etpf%2bax0Sf%2bkVGwEpzBHevfuDRNMymuxgZ4uyaDK1KAnV%2bhvzZiIeNoWBv4y3XYycuSV8vnOxm4EQcTnKccZ2apccjgiY5efLexsHeOtmhOGI%2bYrCfHTgROriG%2bP4QuR9iHwdeLq8u92ioL4s9iq8d8VCI56U%2fqt6LGfsLGljNrk5D7ZRNMk9U6SnXwM0sYkifRvDfC6Z1koLnU9iM7H0%2fEQPgIgp74ODej1VxUKdW5gUQK4BNUuQhnV8lQlF5w%3d%3d';
+                
+                // Windows 11 家庭版（仅限中国）链接
+                var chinaHomeLink = 'https://software.download.prss.microsoft.com/dbazure/Win11_25H2_China_GGK_Chinese_Simplified_x64.iso?t=d6901105-f3ac-440b-8562-3d38d224454c&P1=1759476294&P2=601&P3=2&P4=lVJTYy6HcNumvYmyQ%2biqrGjmbnPBIG%2bPkWr36sm%2blDE7WK1R%2fQScf8MttsxBC8ojNVDsMa9goDbQzJRDGptlYlf4Z%2fmku4scgGRwSVItLnwzh5fe3qG2O4XirIa698i8wy%2f1RH2w0yMSK9uMx8nZ%2bCWFndBrAxY7LIvy%2b2qkG5vWWX554DOejmk8xeeSzvD4qJJBZGxnhgKRGP6XlbxNHuhgCo%2b4J9uadfwDG3qSmt611plQ61qCypHplrhWr5V5o0%2bm9ZZkkhSTctJlErbtePrnFGR%2fKctr59ZfLxV78%2bxSr7pGZC391LbhhCmX2XsadWRy%2bO05aP0zmjW9e5sfHg%3d%3d';
+                
+                // Windows 11 专业中文版本链接
+                var chinaProLink = 'https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Pro_Chinese_Simplified_x64.iso?t=4213b96c-e6fe-462a-92d0-ca5de72a5c10&P1=1759476394&P2=601&P3=2&P4=x5jofBowcgyrDS02l0ykiUS7Cl7ao75bPyqt%2bJJNeD%2f4FNjKog%2bL%2bjuB7sFWTAsoMbBZ1mJzqHF4tAphtfrZ4TrRjzZjEhU6iaHsJSHkfV7EKOKoCI7luoaFQ9%2fheqQeQSovSzIjbv4YkOAmPVU4iT84IzTKngDQO84INdPFUZvUWvmyqkgmtiU2w4SqTxSalkHTBmkDt2RJH%2blXuumuhwg8wUx3SzLPqJigPtZKoWLRovohDrhmfw4EEClozrbce9wSppIXF3haHUnPVyvSmPa1nB8zHF67DpSzOlrGdSC4LnWQA3Cs43d04f8HAOpMVRTd1uOrKTey4WRWTnD8QA%3d%3d';
+                
+                // 根据选择的版本更新下载链接
+                if (selectedOption === '3263') {
+                    // Windows 11 家庭版（仅限中国）
+                    downloadLink.href = chinaHomeLink;
+                    downloadLink.textContent = '下载 Windows 11 家庭版（仅限中国）ISO';
+                } else if (selectedOption === '3264') {
+                    // Windows 11 专业中文版本
+                    downloadLink.href = chinaProLink;
+                    downloadLink.textContent = '下载 Windows 11 专业中文版本 ISO';
+                } else if (selectedOption === '3262') {
+                    // 多版本ISO
+                    downloadLink.href = defaultLink;
+                    downloadLink.textContent = '下载 Windows 11 多版本 ISO';
+                } else {
+                    // 选择了默认选项（选择"下载"）
+                    downloadLink.href = defaultLink;
+                    downloadLink.textContent = '下载 Windows 11 ISO';
+                }
+            });
+            
+            // 添加额外的视觉反馈，确保用户知道需要选择版本
+            productEditionSelect.style.border = '2px solid #0078d4';
+            
+            // 添加一个提示消息
+            const hintText = document.createElement('p');
+            hintText.className = 'hint-text';
+            hintText.textContent = '请先从下拉菜单中选择您需要的Windows 11版本，然后再点击下载按钮。';
+            hintText.style.color = '#0078d4';
+            hintText.style.fontWeight = 'bold';
+            hintText.style.marginTop = '10px';
+            
+            // 插入到下载按钮之前
+            downloadLink.parentNode.insertBefore(hintText, downloadLink);
+        }
+    </script>
+</body>
+</html>

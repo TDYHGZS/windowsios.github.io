@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 下载测试 - 自动修复系统验证</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Windows 11 下载测试</h1>
+        <p>此页面用于测试自动修复系统是否能够正确处理Windows 11 ISO下载功能的问题。</p>
+        
+        <!-- 模拟原始的Windows 11安装页面的下载选项 -->
+        <div class="download-section">
+            <h2>下载Windows 11 ISO文件</h2>
+            
+            <!-- 版本选择器 - 注意ID是'product-edition' -->
+            <div class="download-options">
+                <label for="product-edition">选择Windows 11版本：</label>
+                <select id="product-edition">
+                    <option value="">选择版本...</option>
+                    <option value="3262">Windows 11 多版本ISO</option>
+                    <option value="3263">Windows 11 家庭版（仅限中国）</option>
+                    <option value="3264">Windows 11 专业中文版本</option>
+                </select>
+            </div>
+            
+            <!-- 下载按钮 - 使用与原始页面相同的选择器 -->
+            <a href="https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64.iso" class="btn-primary" target="_blank">
+                下载Windows 11 ISO
+            </a>
+        </div>
+        
+        <div class="test-instructions">
+            <h3>测试说明</h3>
+            <ol>
+                <li>打开浏览器开发者工具（按F12）</li>
+                <li>查看控制台输出，观察自动修复系统的运行情况</li>
+                <li>尝试从下拉菜单中选择不同的Windows 11版本</li>
+                <li>检查下载按钮的文本和链接是否正确更新</li>
+                <li>如果有任何问题，自动修复系统应该会尝试修复它们</li>
+            </ol>
+        </div>
+    </div>
+    
+    <!-- 原始的Windows 11安装页面的JavaScript -->
+    <script>
+        // 为下拉菜单添加事件监听器
+        const productEditionSelect = document.getElementById('product-edition');
+        const downloadLink = document.querySelector('.btn-primary[href*="Win11_25H2_Chinese_Simplified_x64.iso"]');
+        
+        // 确保元素存在
+        if (productEditionSelect && downloadLink) {
+            productEditionSelect.addEventListener('change', function() {
+                var selectedOption = this.value;
+                
+                // 默认链接 - 多版本ISO
+                var defaultLink = 'https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64.iso?t=619dbc57-0687-4d68-9308-81b52b2ab632&P1=1759455324&P2=601&P3=2&P4=wk7lDd6sn1Am5YoOiOIZVUjJkoGt8gO3URC1fwGvgLojsoYNUZsXguoJ2FtnePrZaJUKNE47lqJ61Ri3dbwxTT4etpf%2bax0Sf%2bkVGwEpzBHevfuDRNMymuxgZ4uyaDK1KAnV%2bhvzZiIeNoWBv4y3XYycuSV8vnOxm4EQcTnKccZ2apccjgiY5efLexsHeOtmhOGI%2bYrCfHTgROriG%2bP4QuR9iHwdeLq8u92ioL4s9iq8d8VCI56U%2fqt6LGfsLGljNrk5D7ZRNMk9U6SnXwM0sYkifRvDfC6Z1koLnU9iM7H0%2fEQPgIgp74ODej1VxUKdW5gUQK4BNUuQhnV8lQlF5w%3d%3d';
+                
+                // Windows 11 家庭版（仅限中国）链接
+                var chinaHomeLink = 'https://software.download.prss.microsoft.com/dbazure/Win11_25H2_China_GGK_Chinese_Simplified_x64.iso?t=d6901105-f3ac-440b-8562-3d38d224454c&P1=1759476294&P2=601&P3=2&P4=lVJTYy6HcNumvYmyQ%2biqrGjmbnPBIG%2bPkWr36sm%2blDE7WK1R%2fQScf8MttsxBC8ojNVDsMa9goDbQzJRDGptlYlf4Z%2fmku4scgGRwSVItLnwzh5fe3qG2O4XirIa698i8wy%2f1RH2w0yMSK9uMx8nZ%2bCWFndBrAxY7LIvy%2b2qkG5vWWX554DOejmk8xeeSzvD4qJJBZGxnhgKRGP6XlbxNHuhgCo%2b4J9uadfwDG3qSmt611plQ61qCypHplrhWr5V5o0%2bm9ZZkkhSTctJlErbtePrnFGR%2fKctr59ZfLxV78%2bxSr7pGZC391LbhhCmX2XsadWRy%2bO05aP0zmjW9e5sfHg%3d%3d';
+                
+                // Windows 11 专业中文版本链接
+                var chinaProLink = 'https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Pro_Chinese_Simplified_x64.iso?t=4213b96c-e6fe-462a-92d0-ca5de72a5c10&P1=1759476394&P2=601&P3=2&P4=x5jofBowcgyrDS02l0ykiUS7Cl7ao75bPyqt%2bJJNeD%2f4FNjKog%2bL%2bjuB7sFWTAsoMbBZ1mJzqHF4tAphtfrZ4TrRjzZjEhU6iaHsJSHkfV7EKOKoCI7luoaFQ9%2fheqQeQSovSzIjbv4YkOAmPVU4iT84IzTKngDQO84INdPFUZvUWvmyqkgmtiU2w4SqTxSalkHTBmkDt2RJH%2blXuumuhwg8wUx3SzLPqJigPtZKoWLRovohDrhmfw4EEClozrbce9wSppIXF3haHUnPVyvSmPa1nB8zHF67DpSzOlrGdSC4LnWQA3Cs43d04f8HAOpMVRTd1uOrKTey4WRWTnD8QA%3d%3d';
+                
+                // 根据选择的版本更新下载链接
+                if (selectedOption === '3263') {
+                    // Windows 11 家庭版（仅限中国）
+                    downloadLink.href = chinaHomeLink;
+                    downloadLink.textContent = '下载 Windows 11 家庭版（仅限中国）ISO';
+                } else if (selectedOption === '3264') {
+                    // Windows 11 专业中文版本
+                    downloadLink.href = chinaProLink;
+                    downloadLink.textContent = '下载 Windows 11 专业中文版本 ISO';
+                } else if (selectedOption === '3262') {
+                    // 多版本ISO
+                    downloadLink.href = defaultLink;
+                    downloadLink.textContent = '下载 Windows 11 多版本 ISO';
+                } else {
+                    // 选择了默认选项（选择"下载"）
+                    downloadLink.href = defaultLink;
+                    downloadLink.textContent = '下载 Windows 11 ISO';
+                }
+            });
+        }
+    </script>
+    
+    <!-- 包含自动修复系统的脚本 -->
+    <script src="script.js"></script>
+</body>
+</html>
